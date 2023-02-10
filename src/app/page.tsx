@@ -21,7 +21,7 @@ export default async function Home({ searchParams }: any) {
     <div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-6xl mx-auto space-x-4 space-y-2 py-2">
       {results.map((result) => {
         return (
-          <Link key={result.id} href={`/movie/${result.id}`}>
+          <Link key={result.id} className="ml-4 mt-2" href={`/movie/${result.id}`}>
             <Card  result={result} />
           </Link>
         );

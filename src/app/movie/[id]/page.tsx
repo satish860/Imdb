@@ -26,7 +26,7 @@ async function page({ params }: any) {
             height: "100%",
           }}
           placeholder="blur"
-          blurDataURL="/spinner.svg"
+          blurDataURL="/loading.svg"
           alt="Movie poster"
         ></Image>
         <div className="p-2">

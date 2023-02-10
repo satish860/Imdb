@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 function Card({ result }: any) {
   return (
-    <div className="flex justify-center ml-4 mt-2">
+    <div className="cursor-pointer flex justify-center">
       <div className="rounded-lg shadow-lg bg-white max-w-sm">
         <img
           className="rounded-t-lg"
