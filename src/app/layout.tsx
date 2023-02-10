@@ -1,4 +1,5 @@
 import Header from './components/Header'
+import Navigate from './components/Navigate'
 import './globals.css'
 
 export default function RootLayout({
@@ -8,8 +9,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className='bg-gray-700 text-gray-200'>
         <Header/>
+        <Navigate/>
+
         {children}
         </body>
     </html>
