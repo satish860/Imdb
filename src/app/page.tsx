@@ -1,4 +1,5 @@
 import { Console } from "console";
+import Link from "next/link";
 import Card from "./components/Card";
 
 export const dynamic = "force-dynamic";
@@ -19,7 +20,11 @@ export default async function Home({ searchParams }: any) {
   return (
     <div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-6xl mx-auto space-x-4 space-y-2 py-2">
       {results.map((result) => {
-        return <Card key={result.id} result={result} />;
+        return (
+          <Link key={result.id} href={`/movie/${result.id}`}>
+            <Card  result={result} />
+          </Link>
+        );
       })}
     </div>
   );
